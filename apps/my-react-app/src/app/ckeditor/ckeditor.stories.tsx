@@ -1,5 +1,5 @@
 import React from 'react';
-import CKEditorComponent from './ckeditor';
+import { CKEditorComponent } from './ckeditor';
 
 export default {
   title: 'Components/CKEditor',
