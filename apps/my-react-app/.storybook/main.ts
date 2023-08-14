@@ -70,8 +70,6 @@ const config: StorybookConfig = {
         ],
       }
     );
-
-    console.log(config.module?.rules);
     return config;
   },
 };

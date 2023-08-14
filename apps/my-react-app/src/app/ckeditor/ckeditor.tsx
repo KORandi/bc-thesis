@@ -28,6 +28,7 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
+import { Timestamp } from './plugins/timestamp/timestampPlugin';
 
 const plugins = [
   TextTransformation,
@@ -56,6 +57,7 @@ const plugins = [
   Table,
   TableToolbar,
   PictureEditing,
+  Timestamp,
 ];
 
 export const CKEditorComponent = () => {
@@ -64,7 +66,7 @@ export const CKEditorComponent = () => {
       editor={ClassicEditor}
       config={{
         plugins,
-        toolbar: ['bold', 'italic'],
+        toolbar: ['bold', 'italic', '|', 'timestamp'],
       }}
       data="<p>Hello from CKEditor&nbsp;5!</p>"
       onReady={(editor) => {
